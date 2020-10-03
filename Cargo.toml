@@ -4,6 +4,11 @@ version = "0.1.0"
 authors = ["mkusaka <hinoshita1992@gmail.com>"]
 edition = "2018"
 
+# for Error: failed to execute `wasm-opt`: exited with exit code: 1
+# https://github.com/rustwasm/wasm-pack/issues/793
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
 [lib]
 crate-type = ["cdylib", "rlib"]
 

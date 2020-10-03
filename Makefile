@@ -1,8 +1,8 @@
-setup:
-	cd www && npm install
-
 build:
 	wasm-pack build
+
+setup:
+	cd www && npm install
 
 test:
 	wasm-pack test
