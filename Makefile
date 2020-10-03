@@ -7,7 +7,7 @@ build:
 test:
 	wasm-pack test
 
-index:
+start:
 	cd www && npm run start
 
 clean:
