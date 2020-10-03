@@ -1,0 +1,15 @@
+{
+  "name": "game-of-life-wasm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mkusaka/game-of-life-wasm.git",
+  "author": "mkusaka <hinoshita1992@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "scripts": {
+    "build": "cd www && npm run build && cd ../ ",
+    "deploy": "yarn build && gh-pages -d www/dist"
+  }
+}
